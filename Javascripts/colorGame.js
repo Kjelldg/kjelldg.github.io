@@ -21,7 +21,7 @@ easyButton.addEventListener("click", function() {
     colorDisplay.textContent = correctColor;
     for (var i = 0; i < squares.length; i++) {
         if (colors[i]) {
-            squares[i].style.background = colors[i];
+            squares[i].style.backgroundColor = colors[i];
         } else {
             squares[i].style.display = "none";
         }
@@ -36,7 +36,7 @@ hardButton.addEventListener("click", function () {
     correctColor = pickColor();
     colorDisplay.textContent = correctColor;
     for (var i = 0; i < squares.length; i++) {
-            squares[i].style.background = colors[i];       
+            squares[i].style.backgroundColor = colors[i];       
             squares[i].style.display = "block";        
     }
 });
@@ -46,7 +46,7 @@ resetButton.addEventListener("click", function () {
     correctColor = pickColor();
     colorDisplay.textContent = correctColor;
     for (var i = 0; i < squares.length; i++) {
-        squares[i].style.background = colors[i];
+        squares[i].style.backgroundColor = colors[i];
     }
     h1.style.background = "steelblue";
     messageDisplay.textContent = "";
@@ -78,7 +78,7 @@ for (var i = 0; i < squares.length; i++) {
 function changeColors (color) {
 
     for (var i = 0; i < squares.length; i++) {
-        squares[i].style.background = color;
+        squares[i].style.backgroundColor = color;
     }
 
 }
